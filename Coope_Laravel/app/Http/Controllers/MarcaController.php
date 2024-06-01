@@ -9,8 +9,8 @@ class MarcaController extends Controller
 {
     public function index()
     {
-        $marcas = Marca::all();
-        return view('marcas.index', compact('marcas'));
+        $marcas = Marca::all(); // Ejemplo básico, ajusta según tus necesidades
+        return $marcas;
     }
 
     public function create()
