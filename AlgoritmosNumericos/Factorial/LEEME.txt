@@ -1,0 +1,9 @@
+
+ENTORNO LEVANTADO CON:
+
+INTALAMOS
+npm install -g http-server
+
+EJECUUTAMOS
+http-server
+

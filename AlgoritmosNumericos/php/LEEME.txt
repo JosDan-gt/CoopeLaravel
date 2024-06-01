@@ -1,0 +1,7 @@
+
+ENTORNO LEVANTADO CON:
+
+
+EJECUUTAMOS
+php -S localhost:8000
+
