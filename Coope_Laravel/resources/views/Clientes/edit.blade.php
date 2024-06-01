@@ -20,7 +20,7 @@
         </div>
     @endif
 
-    <form action="{{ route('clientes.update',$cliente->ID) }}" method="POST">
+    <form action="{{ route('clientes.update', $cliente->ID) }}" method="POST">
         @csrf
         @method('PUT')
 
@@ -28,7 +28,8 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Nombre:</strong>
-                    <input type="text" name="Nombre" value="{{ $cliente->Nombre }}" class="form-control" placeholder="Nombre">
+                    <input type="text" name="Nombre" value="{{ $cliente->Nombre }}" class="form-control"
+                        placeholder="Nombre">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
@@ -40,10 +41,20 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Teléfono:</strong>
-                    <input type="text" name="Telefono" value="{{ $cliente->Telefono }}" class="form-control" placeholder="Teléfono">
+                    <input type="text" name="Telefono" value="{{ $cliente->Telefono }}" class="form-control"
+                        placeholder="Teléfono">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Correo Electrónico:</strong>
-                    <input type="email" name="CorreoElectronico
+                    <input type="email" name="CorreoElectronico" value="{{ $cliente->CorreoElectronico }}"
+                        class="form-control" placeholder="Correo Electrónico">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+            </div>
+        </div>
+    </form>
+@endsection
